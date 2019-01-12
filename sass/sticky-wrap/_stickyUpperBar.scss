@@ -1,0 +1,102 @@
+.stickyUpperBar {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  line-height: 40px;
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  opacity: .8;
+
+  &__title,
+  &__burger,
+  &__landscapeStripe {
+    position: absolute;
+    transition: .5s;
+  }
+
+  &__title {
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    padding-left: 10%;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--active {
+      opacity: 0;
+    }
+  }
+
+
+
+
+  &__burger {
+    top: 20px;
+    right: 10%;
+  }
+
+  &__landscapeStripe {
+    display: block;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: #555;
+    content: "";
+
+    &--active {
+      opacity: 0;
+    }
+  }
+}
+
+.burger {
+  position: absolute;
+  height: 24px;
+  width: 32px;
+
+  &__first,
+  &__second,
+  &__third {
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transition: .5s;
+  }
+
+  &__first {
+    top: 0;
+
+    &--active {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__second {
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--active {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__third {
+    bottom: 0;
+
+    &--active {
+      top: 50%;
+      transform: rotate(-225deg);
+    }
+  }
+}

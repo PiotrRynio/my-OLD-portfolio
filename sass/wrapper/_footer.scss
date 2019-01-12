@@ -1,0 +1,12 @@
+.footer {
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+
+    &__clause {
+        padding-top: 10px;
+        color: white;
+    }
+}

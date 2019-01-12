@@ -1,0 +1,32 @@
+.navMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(100vh);
+    text-align: center;
+    line-height: 150%;
+    background-color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0;
+    transition: .5s, transform 0s 2s;
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__li {
+        padding: 10px;
+    }
+
+    &--active {
+        transform: translateX(0);
+        opacity: 1;
+        transition: .5s, transform 0s 0s;
+    }
+}
