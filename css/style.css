@@ -137,6 +137,18 @@ section:nth-of-type(n+2)::before {
   opacity: 1;
 }
 
+@media (min-width: 400px) {
+  .navMenu__icon {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .navMenu__icon {
+    padding-left: 40px;
+  }
+}
+
 .stickyUpperBar {
   z-index: 20;
   position: fixed;

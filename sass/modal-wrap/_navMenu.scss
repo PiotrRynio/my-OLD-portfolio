@@ -63,7 +63,6 @@
     }
 
     &__icons {
-
         &:hover {
             color: var(--color-navMenu-font);
         }
@@ -76,6 +75,18 @@
         &:hover {
             color: var(--color-navMenu-distc);
             opacity: 1;
+        }
+    }
+
+    @media (min-width: 400px) {
+        &__icon {
+            padding-left: 20px;
+        }
+    }
+
+    @media (min-width: 700px) {
+        &__icon {
+            padding-left: 40px;
         }
     }
 }
