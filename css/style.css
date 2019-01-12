@@ -22,12 +22,16 @@ h6 {
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
+  cursor: default;
 }
 
 :root {
   --color-1: black;
   --color-2: white;
   --color-3: #FF0000;
+  --color-navMenu-font: var(--color-1);
+  --color-navMenu-bgc: var(--color-2);
+  --color-navMenu-distc: var(--color-3);
 }
 
 section {
@@ -52,27 +56,14 @@ section:nth-of-type(n+2)::before {
   -webkit-transform: translateX(100vh);
           transform: translateX(100vh);
   text-align: center;
-  line-height: 150%;
-  background-color: var(--color-2);
-  font-size: 50px;
+  background-color: var(--color-navMenu-bgc);
+  font-size: 40px;
   font-weight: 700;
   opacity: 0;
   -webkit-transition: .5s, -webkit-transform 0s 2s;
   transition: .5s, -webkit-transform 0s 2s;
   transition: .5s, transform 0s 2s;
   transition: .5s, transform 0s 2s, -webkit-transform 0s 2s;
-}
-
-.navMenu__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.navMenu__li {
-  padding: 10px;
 }
 
 .navMenu--active {
@@ -83,6 +74,67 @@ section:nth-of-type(n+2)::before {
   transition: .5s, -webkit-transform 0s 0s;
   transition: .5s, transform 0s 0s;
   transition: .5s, transform 0s 0s, -webkit-transform 0s 0s;
+}
+
+.navMenu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 10%;
+  left: 10%;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.navMenu__li:hover {
+  color: var(--color-navMenu-distc);
+}
+
+.navMenu__standardCV {
+  display: inline;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navMenu__standardCV:hover {
+  color: var(--color-navMenu-font);
+}
+
+.navMenu__linkCV {
+  padding-left: 10px;
+  color: var(--color-navMenu-distc);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+.navMenu__linkCV:hover {
+  opacity: 1;
+}
+
+.navMenu__icons:hover {
+  color: var(--color-navMenu-font);
+}
+
+.navMenu__icon {
+  padding-left: 10px;
+  opacity: .5;
+}
+
+.navMenu__icon:hover {
+  color: var(--color-navMenu-distc);
+  opacity: 1;
 }
 
 .stickyUpperBar {
@@ -185,8 +237,8 @@ section:nth-of-type(n+2)::before {
 
 .burger__third--active {
   top: 50%;
-  -webkit-transform: rotate(-225deg);
-          transform: rotate(-225deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .wrapper {

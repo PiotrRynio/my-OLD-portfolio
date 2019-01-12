@@ -32,9 +32,6 @@
     }
   }
 
-
-
-
   &__burger {
     top: 20px;
     right: 10%;
@@ -97,7 +94,7 @@
 
     &--active {
       top: 50%;
-      transform: rotate(-225deg);
+      transform: rotate(135deg);
     }
   }
 }
