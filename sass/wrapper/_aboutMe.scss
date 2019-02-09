@@ -1,0 +1,24 @@
+.aboutMe {
+    position: relative;
+    padding: 10px 0 50px;
+    width: 100%;
+
+    &__title {
+        @include sectionTitle;
+    }
+
+    &__desc {
+        @include sectionDesc;
+    }
+
+    &__standardCV {
+        @include inscription-standardCV;
+        padding-top: 10px;
+        width: 100%;
+        text-align: right;
+    }
+
+    &__linkCV {
+        @include inscription-linkCV;
+    }
+}

@@ -1,0 +1,32 @@
+@mixin sectionTitle {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+@mixin sectionDesc {
+    padding: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@mixin inscription-standardCV {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin inscription-linkCV {
+    padding-left: 10px;
+    color: $color-navMenu-distc;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: .7;
+
+    &:hover {
+        opacity: 1;
+    }
+}

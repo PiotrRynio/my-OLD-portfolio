@@ -1,0 +1,37 @@
+.contact {
+    position: relative;
+    padding: 30px 0 20px;
+    width: 100%;
+    text-align: center;
+
+    &__title {
+        @include sectionTitle;
+    }
+
+    &__desc {
+        @include sectionDesc;
+        padding-bottom: 20px;
+    }
+
+    &__icons {}
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px 0;
+
+    &__item {
+        flex-grow: 1;
+        align-self: center;
+        flex-basis: 150px;
+        height: 100px;
+        color: $color-basic-font;
+        font-size: 60px;
+        opacity: .5;
+    }
+}

@@ -1,0 +1,89 @@
+.myProjects {
+    width: 100%;
+
+    &__oneProject {
+        height: 280px;
+        width: 100%;
+    }
+}
+
+.project {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    filter: grayscale(50%);
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: royalblue;
+    }
+
+    &__overlay {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(107, 1, 1);
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    &:hover &__overlay {
+        opacity: 1;
+    }
+
+    &:nth-of-type(2n) &__overlay {
+        background-color: rgb(0, 110, 0);
+    }
+
+    &:nth-of-type(3n) &__overlay {
+        background-color: rgb(77, 59, 11);
+    }
+
+    &:nth-of-type(4n) &__overlay {
+        background-color: rgb(0, 140, 186);
+    }
+
+    &:nth-of-type(5n) &__overlay {
+        background-color: rgb(110, 62, 0);
+    }
+
+    &__details {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        color: white;
+        font-size: 25px;
+    }
+
+    &__title {
+        padding: 10px 0;
+    }
+
+    &__icon {
+        display: inline-block;
+        padding: 10px;
+        font-size: 40px;
+        opacity: .5;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    &__desc {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+}

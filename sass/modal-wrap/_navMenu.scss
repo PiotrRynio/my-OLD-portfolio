@@ -1,12 +1,13 @@
 .navMenu {
+    z-index: 20;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    transform: translateX(100vh);
+    transform: translateX(200vh);
     text-align: center;
-    background-color: var(--color-navMenu-bgc);
+    background-color: $color-navMenu-bgc;
     font-size: 40px;
     font-weight: 700;
     opacity: 0;
@@ -34,46 +35,51 @@
     }
 
     &__li {
+        display: inline-block;
+        width: 100%;
+
         &:hover {
-            color: var(--color-navMenu-distc);
+            color: $color-navMenu-distc;
         }
     }
 
     &__standardCV {
-        display: inline;
-        font-size: 14px;
-        font-weight: 400;
+
+        @include inscription-standardCV;
 
         &:hover {
-            color: var(--color-navMenu-font);
+            color: $color-navMenu-font;
         }
     }
 
     &__linkCV {
-        padding-left: 10px;
-        color: var(--color-navMenu-distc);
-        font-size: 24px;
-        font-weight: 700;
-        text-transform: uppercase;
-        opacity: .7;
+        @include inscription-linkCV;
 
-        &:hover {
-            opacity: 1;
-        }
+
     }
 
     &__icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
         &:hover {
-            color: var(--color-navMenu-font);
+            color: $color-navMenu-font;
         }
     }
 
     &__icon {
-        padding-left: 10px;
+        flex-grow: 1;
+        align-self: center;
+        text-align: center;
+        font-size: 32px;
         opacity: .5;
 
         &:hover {
-            color: var(--color-navMenu-distc);
+            color: $color-navMenu-distc;
             opacity: 1;
         }
     }

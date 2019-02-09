@@ -1,7 +1,67 @@
 .footer {
-    padding: 20px;
-    background-color: var(--color-1);
-    color: var(--color-2);
+    background-color: $color-basic-font;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    &__contact,
+    &__clause {
+        flex-grow: 1;
+        align-self: flex-start;
+        flex-basis: 300px;
+        line-height: 180%;
+    }
+
+    &__contact {
+        &:after {
+            display: block;
+            height: 1px;
+            width: 80%;
+            margin-top: 20px;
+            background-color: $color-basic-bgc;
+            content: "";
+        }
+    }
+
+    &__clause {
+        padding: 10px 20px 25px;
+    }
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 30px 0 15px;
+    background-color: $color-basic-font;
+    color: $color-basic-bgc;
+    font-size: 16px;
+
+    &__item {
+        flex-grow: 1;
+        align-self: flex-start;
+        line-height: 200%;
+    }
+
+    &__icon {
+        padding: 0 15px 0 40px;
+        color: $color-basic-distc;
+        font-size: 1.5em;
+        transform: translateY(10%);
+        opacity: 0.5;
+    }
+
+
+}
+
+.clauseContainer {
+    color: $color-2;
     font-size: 10px;
     text-align: center;
 

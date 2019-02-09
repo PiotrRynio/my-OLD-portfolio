@@ -1,12 +1,1 @@
-section {
-    height: 100vh;
-
-    &:nth-of-type(n+2)::before {
-        display: block;
-        height: 3px;
-        width: 100%;
-        background-color: #444;
-        opacity: .5;
-        content: '';
-    }
-}
+section {}
