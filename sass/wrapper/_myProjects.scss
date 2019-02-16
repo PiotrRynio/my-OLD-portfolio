@@ -1,24 +1,46 @@
 .myProjects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
     width: 100%;
 
     &__oneProject {
-        height: 280px;
-        width: 100%;
+        flex-grow: 12;
+        flex-basis: 300px;
+        height: 300px;
+        margin: 2px 1px;
+    }
+
+    &__oneProject:nth-of-type(2n) {
+        flex-grow: 1;
+    }
+
+    &__oneProject:nth-of-type(3n) {
+        flex-grow: 100;
+        flex-basis: 10000px;
+    }
+
+    &__oneProject:nth-of-type(4n) {
+        flex-grow: 1;
+    }
+
+    &__oneProject:nth-of-type(5n) {
+        flex-grow: 4;
     }
 }
 
 .project {
     overflow: hidden;
     position: relative;
-    margin-top: 10px;
-    filter: grayscale(50%);
 
     &__img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        background-color: royalblue;
+        background-color: rgb(233, 233, 233);
     }
 
     &__overlay {
@@ -31,7 +53,7 @@
         height: 100%;
         width: 100%;
         text-align: center;
-        background-color: rgb(107, 1, 1);
+        background-color: rgb(252, 17, 17);
         opacity: 0;
         transition: .5s ease;
     }
@@ -45,7 +67,7 @@
     }
 
     &:nth-of-type(3n) &__overlay {
-        background-color: rgb(77, 59, 11);
+        background-color: rgb(149, 194, 0);
     }
 
     &:nth-of-type(4n) &__overlay {
@@ -85,5 +107,47 @@
     &__desc {
         padding: 10px 0;
         font-size: 15px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    @media only screen and (min-width: 600px) {
+        .myProjects {
+            &__oneProject {
+                flex-basis: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 910px) {
+        .myProjects {
+            &__oneProject {
+                flex-basis: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    @media only screen and (min-width: 1000px) {
+        .myProjects {
+            display: none;
+            align-items: stretch;
+            align-content: center;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            height: 90vh;
+            width: 50%;
+            padding: 20px 10px 10px 10px;
+
+            &__oneProject {
+                flex-basis: 200px;
+                height: 33.33333%;
+            }
+        }
+
     }
 }

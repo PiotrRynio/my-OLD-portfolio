@@ -1,4 +1,5 @@
 .contact {
+    display: block;
     position: relative;
     padding: 30px 0 20px;
     width: 100%;
@@ -12,8 +13,6 @@
         @include sectionDesc;
         padding-bottom: 20px;
     }
-
-    &__icons {}
 }
 
 .iconsContainer {
@@ -33,5 +32,36 @@
         color: $color-basic-font;
         font-size: 60px;
         opacity: .5;
+
+        &:hover {
+            color: $color-basic-distc;
+        }
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    @media (min-width: 600px) {
+        .iconsContainer {
+            &__item {
+                flex-basis: 33%;
+            }
+        }
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    @media (min-width: 600px) {
+        .iconsContainer {
+            &__item {
+                flex-basis: 33%;
+            }
+        }
+    }
+
+    @media (min-width:1320px) {
+        .contact {
+            padding-bottom: 50px;
+        }
+
     }
 }

@@ -20,192 +20,250 @@
     crossorigin="anonymous">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
   <!-- sheet css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-  <!-- STICKY-WRAP -->
-  <header class="header sticky-wrap">
-    <div class="stickyUpperBar">
-      <h1 class="stickyUpperBar__title">Piotr Witold Rynio</h1>
-      <div class="stickyUpperBar__burger burger">
-        <span class="burger__first"></span>
-        <span class="burger__second"></span>
-        <span class="burger__third"></span>
-      </div>
-      <span class="stickyUpperBar__landscapeStripe"></span>
-      <!-- <a href="#section-intro">
-                <i class="stickyArrowToHeader fas fa-chevron-circle-down"></i>
-        </a> -->
-  </header>
-
-  <!-- WRAPPER -->
-  <div class="wrapper">
-    <header class="intro" id="section-intro">
-      <h2 class="intro__title intro__title--first">My Portfolio</h2>
-      <h2 class="intro__title intro__title--second">Front-end</h2>
-      <h2 class="intro__title intro__title--third">developer</h2>
-      <!-- <h2 class="intro__title intro__title--occupation">Front-end developer</h2> -->
-      <img class="intro__introImg" src="./img/intro/introImg.png" alt="intro img - my Person">
+  <div class="allWraps">
+    <!-- STICKY-WRAP -->
+    <header class="header sticky-wrap">
+      <div class="stickyUpperBar">
+        <h1 class="stickyUpperBar__title">Piotr Witold Rynio</h1>
+        <div class="stickyUpperBar__burger burger">
+          <span class="burger__first"></span>
+          <span class="burger__second"></span>
+          <span class="burger__third"></span>
+        </div>
+        <span class="stickyUpperBar__landscapeStripe"></span>
     </header>
 
-    <section class="aboutMe" id="section-aboutMe">
-      <h3 class="aboutMe__title">About</h3>
-      <p class="aboutMe__desc aboutMe__desc--first">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis placeat officiis eum?
-        Officiis, corporis. Asperiores, mollitia quisquam? Consequatur explicabo eius commodi repellat nihil ipsam
-        rerum voluptate doloribus voluptatibus numquam.
-      </p>
-      <p class="aboutMe__desc aboutMe__desc--second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vel
-        deserunt laudantium voluptas autem harum placeat a, iusto, quisquam eaque maiores quidem veritatis nam magnam
-        unde eius esse ea hic reiciendis quibusdam! Repellendus, perspiciatis fuga! Sequi praesentium enim voluptatem
-        odio eum esse adipisci, ullam exercitationem nulla! Velit quidem sint cumque!</p>
-      <h3 class="aboutMe__standardCV">
-        Standard CV:
-        <a class="aboutMe__linkCV" href="./toDownload/Piotr_Rynio_portfolio_EN.pdf">en,</a>
-        <a class="aboutMe__linkCV"  href="./toDownload/Piotr_Rynio_portfolio_PL.pdf">pl</a>
-      </h3>
-    </section>
-    <section class="myProjects" id="section-myProjects">
-
-      <div class="myProjects__oneProject project">
-        <img class="project__img" src="./img/myProjects/firstPortfolioImg.png" alt="my First Portfolio">
-        <div class="project__overlay">
-          <div class="project__details">
-            <h3 class="project__title">My first "old" portfolio</h3>
-            <h4 class="project__icon project__icon--net">
-              <a href="https://piotrwr.github.io/old-first-portfolio/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
-            </h4>
-            <h4 class="project__icon project__icon--git">
-              <a href="https://github.com/PiotrWR/old-first-portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            </h4>
-            <p class="project__desc">First - and not so good</p>
-
-          </div>
+    <!-- WRAPPER -->
+    <div class="wrapper">
+      <header class="intro" id="section-intro">
+        <div class="intro__titles">
+          <h2 class="intro__title intro__title--first">My Portfolio</h2>
+          <h2 class="intro__title intro__title--second">Front-end</h2>
+          <h2 class="intro__title intro__title--third">developer</h2>
         </div>
-      </div>
-
-      <div class="myProjects__oneProject project">
-        <img class="project__img" src="./img/myProjects/octocat.png" alt="my github">
-        <div class="project__overlay">
-          <div class="project__details">
-            <h3 class="project__title">My other projects</h3>
-            <h4 class="project__icon project__icon--git">
-              <a href="https://github.com/PiotrWR" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            </h4>
-            <p class="project__desc">See on github!</p>
-          </div>
+        <div class="intro__imgContainer">
+          <img class="intro__introImg" src="./img/intro/introImg.png" alt="intro img - my Person">
         </div>
-      </div>
+        <div class="computerMenu">
+          <h3 class="computerMenu__li"><a href="#section-aboutMe">About</a></h3>
+          <h3 class="computerMenu__li"><a href="#section-myProjects">Portfolio</a></h3>
+          <h3 class="computerMenu__li"><a href="#section-contact">Contact</a></h3>
+        </div>
+      </header>
 
-    </section>
-
-    <section class="contact" id="section-contact">
-      <h3 class="contact__title">Contact</h3>
-      <p class="contact__desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis placeat officiis eum?
-        Officiis, corporis. Asperiores, mollitia quisquam?
-      </p>
-
-      <div class="contact__icons iconsContainer">
-        <h4 class="iconsContainer__item">
-          <a href="mailto:pwrynio@gmail.com?Subject=Response%20to%20CV" target="_top"><i class="fas fa-envelope"></i></a>
-        </h4>
-        <h4 class="iconsContainer__item">
-          <a href="tel:+48518308508" target="_top"><i class="fas fa-phone-square"></i></a>
-        </h4>
-        <h4 class="iconsContainer__item">
-          <a href="#" target="_top"><i class="fab fa-linkedin"></i></a>
-        </h4>
-        <h4 class="iconsContainer__item">
-          <a  href="https://github.com/PiotrWR" target="_top"><i class="fab fa-github-square"></i></a>
-        </h4>
-        <h4 class="iconsContainer__item">
-          <a href="https://fb.com/Piotr.Witold.Rynio" target="_top"><i class="fab fa-facebook-square"></i></a>
-        </h4>
-        <h4 class="iconsContainer__item">
-          <a href="./toDownload/Piotr_Rynio_portfolio_EN.pdf" target="_top"><i class="far fa-id-card"></i></a>
-        </h4>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer__contact infoContainer">
-        <h4 class="infoContainer__item">
-          <a href="tel:+48518308508" target="_top"><i class="infoContainer__icon fas fa-phone-square"></i>+48 518 308 508</a>
-        </h4>
-        <h4 class="infoContainer__item">
-          <a href="mailto:pwrynio@gmail.com?Subject=Response%20to%20CV" target="_top"><i class="infoContainer__icon fas fa-envelope"></i>pwrynio@gmail.com</a>
-        </h4>
-        <h4 class="infoContainer__item">
-          <a href="#" target="_top"><i class="infoContainer__icon fab fa-linkedin"></i>LINK</a>
-        </h4>
-        <h4 class="infoContainer__item">
-          <a  href="https://github.com/PiotrWR" target="_top"><i class="infoContainer__icon fab fa-github-square"></i>github.com/PiotrWR</a>
-        </h4>
-        <h4 class="infoContainer__item">
-          <a href="https://fb.com/Piotr.Witold.Rynio" target="_top"><i class="infoContainer__icon fab fa-facebook-square"></i>fb.com/Piotr.Witold.Rynio</a>
-        </h4>
-      </div>
-      <div class="footer__clause clauseContainer">
-        <p>&copy; Piotr Witold Rynio</p>
-        <p class="clauseContainer__clause">
-          „I hereby agree to the processing of personal data included in my application for the needs necessary to
-          carry
-          out the recruitment process carried out in accordance with art. 6 par. 1 lit. a Regulation
-          (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals
-          with regard to the processing of personal data and on the free movement of such data and repealing Directive
-          95/46/EC (General Data Protection Regulation).” </p>
-      </div>
-    </footer>
-  </div>
-
-
-  <!-- MODAL-WRAP -->
-  <div class="modal-wrap">
-    <nav class="navMenu">
-      <div class="navMenu__list">
-        <h3 class="navMenu__li"><a href="#section-intro">Start</a></h3>
-        <h3 class="navMenu__li"><a href="#section-aboutMe">About</a></h3>
-        <h3 class="navMenu__li"><a href="#section-myProjects">Portfolio</a></h3>
-        <h3 class="navMenu__li"><a href="#section-contact">Contact</a></h3>
-
-        <h3 class="navMenu__li
-         navMenu__standardCV">
+      <section class="aboutMe" id="section-aboutMe">
+        <h3 class="aboutMe__title">About</h3>
+        <p class="aboutMe__desc aboutMe__desc--first">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis placeat officiis eum?
+          Officiis, corporis. Asperiores, mollitia quisquam? Consequatur explicabo eius commodi repellat nihil ipsam
+          rerum voluptate doloribus voluptatibus numquam.
+        </p>
+        <p class="aboutMe__desc aboutMe__desc--second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+          vel
+          deserunt laudantium voluptas autem harum placeat a, iusto, quisquam eaque maiores quidem veritatis nam magnam
+          unde eius esse ea hic reiciendis quibusdam! Repellendus, perspiciatis fuga! Sequi praesentium enim voluptatem
+          odio eum esse adipisci, ullam exercitationem nulla! Velit quidem sint cumque!</p>
+        <h3 class="aboutMe__standardCV">
           Standard CV:
-          <a class="navMenu__linkCV" href="./toDownload/Piotr_Rynio_portfolio_EN.pdf">en,</a>
-          <a class="navMenu__linkCV"  href="./toDownload/Piotr_Rynio_portfolio_PL.pdf">pl</a>
+          <a class="aboutMe__linkCV" href="./toDownload/Piotr_Rynio_portfolio_EN.pdf">en,</a>
+          <a class="aboutMe__linkCV"  href="./toDownload/Piotr_Rynio_portfolio_PL.pdf">pl</a>
         </h3>
+      </section>
+      <section class="myProjects" id="section-myProjects">
 
-        <div class="navMenu__li navMenu__icons">
-          <a class="navMenu__icon" href="https://github.com/PiotrWR">
+        <!-- only copy - delate it -->
+        <div class="myProjects__oneProject project">
+          <img class="project__img" src="./img/myProjects/firstPortfolioImg.png" alt="my First Portfolio">
+          <div class="project__overlay">
+            <div class="project__details">
+              <h3 class="project__title">My first "old" portfolio</h3>
+              <h4 class="project__icon project__icon--net">
+                <a href="https://piotrwr.github.io/old-first-portfolio/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
+              </h4>
+              <h4 class="project__icon project__icon--git">
+                <a href="https://github.com/PiotrWR/old-first-portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </h4>
+              <p class="project__desc">First - and not so good</p>
+            </div>
+          </div>
+        </div>
+        <div class="myProjects__oneProject project">
+          <img class="project__img" src="./img/myProjects/firstPortfolioImg.png" alt="my First Portfolio">
+          <div class="project__overlay">
+            <div class="project__details">
+              <h3 class="project__title">My first "old" portfolio</h3>
+              <h4 class="project__icon project__icon--net">
+                <a href="https://piotrwr.github.io/old-first-portfolio/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
+              </h4>
+              <h4 class="project__icon project__icon--git">
+                <a href="https://github.com/PiotrWR/old-first-portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </h4>
+              <p class="project__desc">First - and not so good</p>
+            </div>
+          </div>
+        </div>
+        <div class="myProjects__oneProject project">
+          <img class="project__img" src="./img/myProjects/firstPortfolioImg.png" alt="my First Portfolio">
+          <div class="project__overlay">
+            <div class="project__details">
+              <h3 class="project__title">My first "old" portfolio</h3>
+              <h4 class="project__icon project__icon--net">
+                <a href="https://piotrwr.github.io/old-first-portfolio/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
+              </h4>
+              <h4 class="project__icon project__icon--git">
+                <a href="https://github.com/PiotrWR/old-first-portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </h4>
+              <p class="project__desc">First - and not so good</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- this -->
+        <div class="myProjects__oneProject project">
+          <img class="project__img" src="./img/myProjects/firstPortfolioImg.png" alt="my First Portfolio">
+          <div class="project__overlay">
+            <div class="project__details">
+              <h3 class="project__title">My first "old" portfolio</h3>
+              <h4 class="project__icon project__icon--net">
+                <a href="https://piotrwr.github.io/old-first-portfolio/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
+              </h4>
+              <h4 class="project__icon project__icon--git">
+                <a href="https://github.com/PiotrWR/old-first-portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </h4>
+              <p class="project__desc">First - and not so good</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="myProjects__oneProject project">
+          <img class="project__img" src="./img/myProjects/octocat.png" alt="my github">
+          <div class="project__overlay">
+            <div class="project__details">
+              <h3 class="project__title">My other projects</h3>
+              <h4 class="project__icon project__icon--git">
+                <a href="https://github.com/PiotrWR" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </h4>
+              <p class="project__desc">See on github!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contactAndFooterContainer">
+        <section class="contactAndFooterContainer__contact contact" id="section-contact">
+          <h3 class="contact__title">Contact</h3>
+          <p class="contact__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis placeat officiis eum?
+            Officiis, corporis. Asperiores, mollitia quisquam?
+          </p>
+
+          <div class="contact__icons iconsContainer">
+            <h4 class="iconsContainer__item">
+              <a href="mailto:pwrynio@gmail.com?Subject=Response%20to%20CV" target="_top"><i class="fas fa-envelope"></i></a>
+            </h4>
+            <h4 class="iconsContainer__item">
+              <a href="tel:+48518308508" target="_top"><i class="fas fa-phone-square"></i></a>
+            </h4>
+            <h4 class="iconsContainer__item">
+              <a href="#" target="_top"><i class="fab fa-linkedin"></i></a>
+            </h4>
+            <h4 class="iconsContainer__item">
+              <a  href="https://github.com/PiotrWR" target="_top"><i class="fab fa-github-square"></i></a>
+            </h4>
+            <h4 class="iconsContainer__item">
+              <a href="https://fb.com/Piotr.Witold.Rynio" target="_top"><i class="fab fa-facebook-square"></i></a>
+            </h4>
+            <h4 class="iconsContainer__item">
+              <a href="./toDownload/Piotr_Rynio_portfolio_EN.pdf" target="_top"><i class="far fa-id-card"></i></a>
+            </h4>
+          </div>
+          <div class="btnFooter">
+            <h4 class="btnFooter__title">Open more contacts and clause</h4>
+          </div>
+        </section>
+
+        <footer class="contactAndFooterContainer__footer footer" id="section-footer">
+          <div class="footer__contact infoContainer">
+            <h4 class="infoContainer__item">
+              <a href="tel:+48518308508" target="_top"><i class="infoContainer__icon fas fa-phone-square"></i>+48 518 308 508</a>
+            </h4>
+            <h4 class="infoContainer__item">
+              <a href="mailto:pwrynio@gmail.com?Subject=Response%20to%20CV" target="_top"><i class="infoContainer__icon fas fa-envelope"></i>pwrynio@gmail.com</a>
+            </h4>
+            <h4 class="infoContainer__item">
+              <a href="#" target="_top"><i class="infoContainer__icon fab fa-linkedin"></i>LINK</a>
+            </h4>
+            <h4 class="infoContainer__item">
+              <a  href="https://github.com/PiotrWR" target="_top"><i class="infoContainer__icon fab fa-github-square"></i>github.com/PiotrWR</a>
+            </h4>
+            <h4 class="infoContainer__item">
+              <a href="https://fb.com/Piotr.Witold.Rynio" target="_top"><i class="infoContainer__icon fab fa-facebook-square"></i>fb.com/Piotr.Witold.Rynio</a>
+            </h4>
+          </div>
+          <div class="footer__clause clauseContainer">
+            <p>&copy; Piotr Witold Rynio</p>
+            <p class="clauseContainer__clause">
+              „I hereby agree to the processing of personal data included in my application for the needs necessary to
+              carry
+              out the recruitment process carried out in accordance with art. 6 par. 1 lit. a Regulation
+              (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of
+              individuals
+              with regard to the processing of personal data and on the free movement of such data and repealing
+              Directive
+              95/46/EC (General Data Protection Regulation).” </p>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+
+    <!-- MODAL-WRAP -->
+    <div class="modal-wrap">
+      <nav class="navMenu">
+        <div class="navMenu__list">
+          <h3 class="navMenu__li"><a href="#section-intro">Start</a></h3>
+          <h3 class="navMenu__li"><a href="#section-aboutMe">About</a></h3>
+          <h3 class="navMenu__li"><a href="#section-myProjects">Portfolio</a></h3>
+          <h3 class="navMenu__li"><a href="#section-contact">Contact</a></h3>
+
+          <h3 class="navMenu__li
+         navMenu__standardCV">
+            Standard CV:
+            <a class="navMenu__linkCV" href="./toDownload/Piotr_Rynio_portfolio_EN.pdf">en,</a>
+            <a class="navMenu__linkCV"  href="./toDownload/Piotr_Rynio_portfolio_PL.pdf">pl</a>
+          </h3>
+
+          <div class="navMenu__li navMenu__icons">
+            <a class="navMenu__icon" href="https://github.com/PiotrWR">
             <i class="fab fa-github"></i>
           </a>
-          <a class="navMenu__icon" href="tel:+48-518-308-508">
+            <a class="navMenu__icon" href="tel:+48-518-308-508">
             <i class="fas fa-phone"></i>
           </a>
-          <a class="navMenu__icon" href="mailto:pwrynio@gmail.com?subject=Oferta%20współpracy">
+            <a class="navMenu__icon" href="mailto:pwrynio@gmail.com?subject=Oferta%20współpracy">
             <i class="far fa-envelope-open"></i>
           </a>
-          <a class="navMenu__icon" href="#">
+            <a class="navMenu__icon" href="#">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a class="navMenu__icon" href="https://fb.com/Piotr.Witold.Rynio">
+            <a class="navMenu__icon" href="https://fb.com/Piotr.Witold.Rynio">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a class="navMenu__icon" href="https://m.me/Piotr.Witold.Rynio">
+            <a class="navMenu__icon" href="https://m.me/Piotr.Witold.Rynio">
             <i class="fab fa-facebook-messenger"></i>
           </a>
+          </div>
         </div>
-
-      </div>
+      </nav>
+    </div>
   </div>
-  </nav>
-  </div>
-
 
   <!-- JAVA SCRIPT -->
   <script src="lib/jquery/jquery-3.3.1.min.js"></script>

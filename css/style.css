@@ -11,6 +11,10 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
 a,
 h1,
 h2,
@@ -26,8 +30,11 @@ h6 {
   cursor: default;
 }
 
-body {
-  max-width: 1000px;
+.allWraps {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .navMenu {
@@ -165,6 +172,12 @@ body {
   }
 }
 
+@media (min-width: 1000px) and (orientation: landscape) {
+  .navMenu__li:nth-child(1) {
+    display: none;
+  }
+}
+
 .stickyUpperBar {
   z-index: 21;
   position: fixed;
@@ -271,27 +284,40 @@ body {
 
 .wrapper {
   overflow: hidden;
+  position: relative;
   max-width: 100%;
   background-color: white;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .wrapper {
+    margin-top: 10vh;
+    height: 90vh;
+  }
 }
 
 .intro {
   overflow: hidden;
   position: relative;
-  top: 0;
+  bottom: 0;
   left: 0;
   height: 100vh;
   width: 100%;
 }
 
-.intro__title {
+.intro__titles {
   z-index: 2;
   position: absolute;
   top: 45%;
-  left: 10px;
+  left: 5%;
+  width: 100%;
   color: black;
   font-size: 35px;
   font-weight: 700;
+}
+
+.intro__title {
+  text-align: left;
 }
 
 .intro__title--first {
@@ -299,27 +325,174 @@ body {
 }
 
 .intro__title--second {
-  top: calc(45% + 50px);
-  left: 10px;
+  padding-top: 10px;
 }
 
-.intro__title--third {
-  top: calc(45% + 90px);
-  left: 10px;
+.intro__imgContainer {
+  overflow: hidden;
+  position: absolute;
+  right: -80%;
+  left: 20%;
+  bottom: 0;
+  height: 80%;
+  opacity: .6;
 }
 
 .intro__introImg {
-  position: absolute;
-  bottom: 0;
-  right: -30%;
-  left: 30%;
-  max-height: 80%;
-  opacity: .6;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100%;
+  width: 100%;
+}
+
+.computerMenu {
+  display: none;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 360px) {
+  .intro__titles {
+    font-size: 39px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 360px) and (min-height: 812px) {
+  .intro__titles {
+    top: 47%;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 411px) {
+  .intro__titles {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .intro__titles {
+    top: 40%;
+    font-size: 75px;
+  }
+  .intro__title--second {
+    padding-top: 15px;
+  }
+  .intro__imgContainer {
+    right: -60%;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px) {
+  .intro__titles {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .intro__titles {
+    top: 34%;
+    left: 10%;
+    font-size: 37px;
+  }
+  .intro__imgContainer {
+    right: 0;
+    left: 50%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 640px) {
+  .intro__titles {
+    font-size: 41px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 731px) {
+  .intro__titles {
+    top: 32%;
+    font-size: 46px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 812px) {
+  .intro__titles {
+    top: 30%;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .intro {
+    position: absolute;
+    width: 50%;
+  }
+  .intro__titles {
+    top: 47%;
+    left: 15%;
+    font-size: 45px;
+  }
+  .intro__imgContainer {
+    right: -80%;
+    left: 10%;
+  }
+  .computerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    padding: 0 5% 0 15%;
+    color: #FF0000;
+    font-size: 35px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: rgba(51, 51, 51, 0.15);
+  }
+  .computerMenu__li:hover {
+    color: black;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1270px) {
+  .intro__titles {
+    top: 46%;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1360px) {
+  .intro__titles {
+    top: 40%;
+    font-size: 60px;
+  }
+  .intro__imgContainer {
+    right: -80%;
+    left: 10%;
+  }
+  .computerMenu {
+    font-size: 45px;
+  }
+  .computerMenu__li:hover {
+    color: black;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1360px) and (min-height: 1000px) {
+  .intro__titles {
+    top: 46%;
+    font-size: 65px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) and (max-height: 600px) {
+  .intro__titles {
+    top: 36%;
+    font-size: 45px;
+  }
 }
 
 .aboutMe {
   position: relative;
-  padding: 10px 0 50px;
+  padding: 10px 3% 50px;
   width: 100%;
 }
 
@@ -335,6 +508,8 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   text-align: center;
+  font-weight: 300;
+  text-align: justify;
 }
 
 .aboutMe__standardCV {
@@ -342,6 +517,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   padding-top: 10px;
+  padding-right: 20px;
   width: 100%;
   text-align: right;
 }
@@ -359,21 +535,76 @@ body {
   opacity: 1;
 }
 
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .aboutMe {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding: 0 3%;
+  }
+}
+
 .myProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   width: 100%;
 }
 
 .myProjects__oneProject {
-  height: 280px;
-  width: 100%;
+  -webkit-box-flex: 12;
+      -ms-flex-positive: 12;
+          flex-grow: 12;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  height: 300px;
+  margin: 2px 1px;
+}
+
+.myProjects__oneProject:nth-of-type(2n) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.myProjects__oneProject:nth-of-type(3n) {
+  -webkit-box-flex: 100;
+      -ms-flex-positive: 100;
+          flex-grow: 100;
+  -ms-flex-preferred-size: 10000px;
+      flex-basis: 10000px;
+}
+
+.myProjects__oneProject:nth-of-type(4n) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.myProjects__oneProject:nth-of-type(5n) {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
 }
 
 .project {
   overflow: hidden;
   position: relative;
-  margin-top: 10px;
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
 }
 
 .project__img {
@@ -382,7 +613,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: royalblue;
+  background-color: #e9e9e9;
 }
 
 .project__overlay {
@@ -395,7 +626,7 @@ body {
   height: 100%;
   width: 100%;
   text-align: center;
-  background-color: #6b0101;
+  background-color: #fc1111;
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -410,7 +641,7 @@ body {
 }
 
 .project:nth-of-type(3n) .project__overlay {
-  background-color: #4d3b0b;
+  background-color: #95c200;
 }
 
 .project:nth-of-type(4n) .project__overlay {
@@ -453,7 +684,46 @@ body {
   font-size: 15px;
 }
 
+@media only screen and (orientation: portrait) and (min-width: 600px) {
+  .myProjects__oneProject {
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 910px) {
+  .myProjects__oneProject {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .myProjects {
+    display: none;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 90vh;
+    width: 50%;
+    padding: 20px 10px 10px 10px;
+  }
+  .myProjects__oneProject {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    height: 33.33333%;
+  }
+}
+
 .contact {
+  display: block;
   position: relative;
   padding: 30px 0 20px;
   width: 100%;
@@ -472,6 +742,7 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   text-align: center;
+  font-weight: 300;
   padding-bottom: 20px;
 }
 
@@ -511,8 +782,32 @@ body {
   opacity: .5;
 }
 
+.iconsContainer__item:hover {
+  color: #FF0000;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 600px) {
+  .iconsContainer__item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 600px) {
+  .iconsContainer__item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1320px) {
+  .contact {
+    padding-bottom: 50px;
+  }
+}
+
 .footer {
-  background-color: black;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +824,7 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: black;
 }
 
 .footer__contact, .footer__clause {
@@ -540,6 +836,10 @@ body {
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
   line-height: 180%;
+}
+
+.footer__contact {
+  padding: 30px 0 15px;
 }
 
 .footer__contact:after {
@@ -573,7 +873,6 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 30px 0 15px;
   background-color: black;
   color: white;
   font-size: 16px;
@@ -605,5 +904,135 @@ body {
 
 .clauseContainer__clause {
   padding-top: 10px;
+  text-align: justify;
+}
+
+.btnFooter {
+  z-index: 3;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 25%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  padding: 40px 20px 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+  -webkit-transition: color .5s, background-color .5s;
+  transition: color .5s, background-color .5s;
+}
+
+.btnFooter.show {
+  background-color: white;
+  color: black;
+  -webkit-transform: translateX(50%) rotate(180deg);
+          transform: translateX(50%) rotate(180deg);
+}
+
+.btnFooter.show .btnFooter__title {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 600px) {
+  .footer__contact {
+    padding: 25px 0 25px 15px;
+  }
+  .footer__contact:after {
+    display: none;
+  }
+  .footer__clause {
+    padding: 30px 20px 25px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .footer__contact {
+    padding-left: 30px;
+  }
+  .footer__clause {
+    padding-top: 35px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__contact {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .footer {
+    position: fixed;
+    bottom: -100vh;
+    right: 0;
+    width: 50%;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .footer__contact, .footer__clause {
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+  }
+  .footer__contact {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .footer__contact:after {
+    display: none;
+  }
+  .footer__clause {
+    font-size: 9px;
+    padding: 10px 25px 10px 10px;
+  }
+  .footer.show {
+    bottom: 0;
+    padding-bottom: 75px;
+  }
+  .infoContainer {
+    font-size: 15px;
+  }
+  .btnFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contactAndFooterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactAndFooterContainer__contact {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .contactAndFooterContainer {
+    display: none;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
+  .contactAndFooterContainer__contact {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

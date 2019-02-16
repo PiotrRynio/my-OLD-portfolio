@@ -1,0 +1,29 @@
+.contactAndFooterContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    &__contact {
+        flex-shrink: 1;
+    }
+
+    &__footer {}
+}
+
+
+@media only screen and (orientation:landscape) and (min-width: 1000px) {
+    .contactAndFooterContainer {
+        display: none;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+
+        &__contact {
+            flex-shrink: 1;
+        }
+
+        &__footer {}
+    }
+}

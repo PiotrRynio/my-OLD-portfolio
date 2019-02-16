@@ -96,3 +96,12 @@
         }
     }
 }
+
+// computer version !!!
+@media (min-width: 1000px) and (orientation: landscape) {
+    .navMenu {
+        &__li:nth-child(1) {
+            display: none;
+        }
+    }
+}

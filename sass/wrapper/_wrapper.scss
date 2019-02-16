@@ -1,5 +1,13 @@
 .wrapper {
     overflow: hidden;
+    position: relative;
     max-width: 100%;
     background-color: $color-basic-bgc;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+    .wrapper {
+        margin-top: 10vh;
+        height: 90vh;
+    }
 }
