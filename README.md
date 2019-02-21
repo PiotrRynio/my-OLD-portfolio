@@ -1,6 +1,6 @@
 # Portfolio:
 My site is published at:
-https://piotrwr.github.io/Portfolio/
+https://piotrwr.github.io/portfolio/
 
 ## Menu:
 * [About this project](#about-this-project)
