@@ -1,3 +1,4 @@
+// buttons.js has code about 'footer button', we can see him in landscape and min-width=1000px view.
 $('.btnFooter').on('click', function (event) {
     $('.footer').toggleClass('show');
     $('.btnFooter').toggleClass('show');
@@ -7,7 +8,6 @@ $('.btnFooter').on('click', function (event) {
         $('.btnFooter__title').text('Open more contacts and clause');
     }
 });
-
 
 window.addEventListener('resize', function () {
     if (($(window).width() < 1000) || (window.innerHeight > window.innerWidth)) {

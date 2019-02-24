@@ -1,5 +1,5 @@
 # Portfolio:
-My site is published at:
+My website is published at:
 https://piotrwr.github.io/portfolio/
 
 ## Menu:
@@ -36,9 +36,20 @@ In this catalog is generated file style.css and style.css.map by SASS generator.
 
 ##### js/...
 Here is script.js which imports other js files from this catalog.
+In future I will make this code shorter and better then today's.
+- script.js imports other files js. It is main file (HTML is calling this file). 
+- variables.js has variables
+- buttons.js has code about 'footer button', we can see him in landscape and min-width=1000px view.
+- navPage.js has code, which it is used to navigation on this page after click on link (a href). In the future I am going to make shorter code then today's.
+- parallax.js are making parallax effect of intro picture (person picture). 
+- stickyNavBar.js is code about burger in upper bar and open menu (after click on this burger)
 
 ##### sass/..
-Here is style.scss which imports other js files (module.scss) from this catalog. Every catalog have module.scss. Every module.scss contains only @import to files .scss or modules in catalog above. 
+Here is style.scss which imports other js files (module.scss) from this catalog.
+Every catalog have module.scss.
+Every module.scss contains only @import to files .scss or modules in catalog above. 
+We have 4 main catalogs, It is base, modal-wrap, sticky-wrap, wrapper.
+Style.scss imports module.scss from this catalogs and allWraps.scss.
 
 ##### lib/...
 Now it is nothing here.

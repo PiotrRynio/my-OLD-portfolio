@@ -1,3 +1,4 @@
+// parallax.js are making parallax effect of intro picture (person picture). 
 $doc.on('scroll', function () {
     if (($(window).width() < 1000) || (window.innerHeight > window.innerWidth)) {
         var imgDownturn = 0.5;

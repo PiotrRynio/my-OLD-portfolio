@@ -1,3 +1,4 @@
+// navPage.js has code, which it is used to navigation on this page after click on link (a href). In the future I am going to make shorter code then today's.
 const $navPage__navBar = $('.stickyUpperBar');
 var activeSection = 'aboutMe';
 

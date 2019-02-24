@@ -1,3 +1,4 @@
+// stickyNavBar.js is code about burger in upper bar and open menu (after click on this burger)
 var activeMenu = false;
 
 $('.stickyUpperBar__burger').on('click', function () {
