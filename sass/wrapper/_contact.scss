@@ -25,6 +25,7 @@
     padding: 20px 0;
 
     &__item {
+        position: relative;
         flex-grow: 1;
         align-self: center;
         flex-basis: 150px;
@@ -36,6 +37,28 @@
         &:hover {
             color: $color-basic-distc;
         }
+
+        &:hover .iconsContainer__showedItemReverse {
+            // display: none;
+            opacity: 0;
+        }
+
+        &:hover .iconsContainer__hiddenItemReverse {
+            // display: none;
+            opacity: 1;
+        }
+    }
+
+    &__hiddenItemReverse {
+        position: absolute;
+        opacity: 0;
+        font-size: 26px;
+        bottom: 50%;
+        left: 0;
+        width: 350px;
+        // transform: translateY(-50%);
+        // position: fixed;
+        // position: sticky;
     }
 }
 
