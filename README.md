@@ -58,7 +58,10 @@ Now it is nothing here.
 Files to download.
 
 ##### img/..
-Here are mages.
+Here you are images.
+
+##### workSpace/..
+Here you are free space for not using in project things.
 
 +++++++++++++++++++++
 
